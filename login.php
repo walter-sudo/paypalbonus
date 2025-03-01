@@ -71,7 +71,7 @@
             <button type="submit">Log In</button>
         </form>
         <div class="create-account">
-            <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+            <p>Don't have an account? <a href="https://github.com/walter-sudo/paypalbonus/blob/main/signup.php">Sign up</a></p>
         </div>
     </div>
 </body>

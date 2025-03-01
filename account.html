@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayPal Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .account-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+        .account-container h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #003087;
+        }
+        .account-container p {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .account-container a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #003087;
+            color: white;
+            text-decoration: none;
+            border-radius: 3px;
+            font-size: 16px;
+            margin: 5px;
+        }
+        .account-container a:hover {
+            background-color: #002060;
+        }
+    </style>
+</head>
+<body>
+    <div class="account-container">
+        <img src="logo.png" alt="PayPal Logo" style="width: 100px; margin-bottom: 20px;">
+        <h1>Welcome, <?php echo htmlspecialchars($userName); ?></h1>
+        <p>Account Balance: $<?php echo htmlspecialchars($balance); ?></p>
+        <a href="#">Send Money</a>
+        <a href="#">Request Money</a>
+        <a href="#">Transaction History</a>
+        <a href="bonus.html">Claim Your Bonus</a>
+        <a href="index.html">Log Out</a>
+    </div>
+</body>
+</html>
